@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+@font-face {
+    font-family: 'Brittany Signature';
+    src: url('../fonts/brittany_signature/BrittanySignature.ttf') format('truetype');
+    /* If the font file is in a different format, adjust the 'format' accordingly */
+  }
+
+  @font-face {
+    font-family: 'The Seasons';
+    src: local('The Seasons'),
+         url('../fonts/Demo_Fonts/Fontspring-DEMO-theseasons-reg.otf') format('opentype'); /* Legacy Browsers */
+         
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-color: #FFF9F1;
+}
+
+.hero-ctnr{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.heroimage{
+    height: 650px;
+    padding-top: 90px;
+}
+.hero-text{
+    background-color: #D9C1BB;
+    width: 40%;
+    margin-top: 90px;
+    padding-top: 40px;
+
+}
+.hero-text h1{
+    position: relative;
+    top: 8%;
+  left: -2%;
+  color: black;
+  font-family: 'Brittany Signature', cursive;
+  font-size: 5rem;
+  text-align: center;
+  line-height: 115px;
+}
+.hero-text p{
+    position: relative;
+    top: 10%;
+  left: -2%;
+  text-align: center; 
+  color: #33302D;
+  font-size: 1.3rem;
+  font-family: 'Bodoni Moda', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero-text .hero-btn{
+    position: relative;
+    top: 14%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+    padding: 10px 70px;
+  text-align: center; 
+  color: #33302D;
+  font-size: 1.5rem;
+  font-family: 'Bodoni Moda', serif;
+  background-color: #33302D;
+  color: #FFF9F1;
+  border: none;
+}
+.hero-btn{
+    margin-top: 15px;
+}
+.hero-btn:hover{
+    background-color: transparent;
+    border: 2px solid #33302D;
+    color: #33302D;
+    font-size: larger;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the background to take up half the screen */
+    height: 50%;
+    background-image: url('../images/Screen\ Shot\ 2023-09-09\ at\ 12.23.07\ PM.png'); /* Add your background image path here */
+    background-size: cover; /* Adjust this property to suit your needs */
+    background-position: center; /* Adjust this property to suit your needs */
+    opacity: 0.5; /* Adjust the opacity of the background image */
+  }
+  
+  .hero-img {
+    z-index: 1; /* Make sure the image is above the background */
+  }
+  
+  .heroimage {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  }
+  
+  .hero-text {
+    z-index: 2; /* Make sure the text is above the background and image */
+    position: relative;
+  }
+  .home-about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Add this line */
+    text-align: center; /* Center text */
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .kimbtn{
+    background-color: #D4B5B8;
+    padding: 20px;
+    border: none;
+  }
+  .kimbtn:hover{
+    border: 1px solid #33302D;
+    background-color: transparent;
+  }
+  .home-about-section h2{
+    color: #D4B5B8;
+    font-family: 'The Seasons';
+    font-size: 4rem;
+    width: 56vw;
+  }
+  .home-about-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: start;
+  }
+  .home-about-img{
+    margin: 0 auto;
+ width:100%;
+ height: 100%;
+ box-shadow: 20px -16px  #d9c1bb69;
+
+  }
+  .home-about-img-ctnr{
+width: 500px;
+margin: 0 auto;
+height: 650px;
+  }
+.home-card-container{
+    width: 100vw;
+    background-color: #33302D;
+    margin-top: 70px;
+padding: 30px;
+    color: #FFF9F1;
+}
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+  
+  }
+  .offeringss-header{
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'The Seasons';
+    text-transform: uppercase;
+  }
+
+  .card {
+    flex: 1;
+    width: 300px;
+    margin: 10px;
+    background-color: transparent;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    border: none;
+    box-shadow: none;
+  
+}
+  
+
+  .card img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .card-text {
+    width: 100%;
+    background: transparent;
+    box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 100;
+    text-transform: uppercase;
+    font-size: 2rem;
+   color: #FFF9F2;
+    padding-top: 15px;
+  }
+  .card-text:hover{
+    color: #D9C1BB;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+.card p{
+    width: 90%;
+    font-size: 1rem;
+  font-family: sans-serif;
+    font-weight: 100;
+    padding-top: 5px;
+    color: #FFF9F1;
+}
+
+  /* Container holding the image and the text */
+
+.cta {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/Screen\ Shot\ 2023-09-09\ at\ 4.08.11\ PM.png');
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 90px;
+
+color: black; 
+}
+
+
+  .testimonial-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial {
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 50px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .testimonial p {
+    font-size: 1.2rem;
+ 
+    position: relative;
+    top:    10px;
+  }
+  
+  .testimonial-author {
+    font-style: italic;
+  }
+.testimonial-section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}  
+.client-love, .testimonial-image{
+    position: relative;
+    top: 30px;
+    font-family: 'Brittany Signature', cursive;
+}
+.testimonialimg{
+    width: 450px;
+    height: 650px;
+}
+.client-love{
+    font-size: 5rem;
+    padding: 50px;
+    color: #D4B5B8;
+}
+.switch{
+    margin-top: 50px;
+}
+button .switch{
+    background-color: transparent;
+}
+
+.salon-policies {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .policy {
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .policy h2 {
+    font-size: 1.9em;
+    font-family: 'The Seasons', sans-serif;
+    color: black;
+
+  }
+  
+  .policy hr {
+    width: 1000px;
+    border: 1px solid #33302D;
+    margin: 10px 0;
+  }
+
+  .salon-policies h6{
+    color: black;
+    padding-bottom: 40px;
+  }
+  .policy p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color:black;
+    font-family: 'PT Sans', sans-serif;
+  }
+@media screen and (max-width: 767px) {
+    .policy h2 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .policy h2 {
+      font-size: 1em;
+    }
+  }  
+
+
+.booking-cta{
+    color: #D4B5B8;
+    border-top: 2px solid #D4B5B8;
+    padding: 10px;
+}
+/* services.css */
+
+.service-header{
+    font-size: 2.5rem;
+    font-family: 'The Seasons', sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.service-page-header{
+    font-family: 'The Seasons', sans-serif;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.service-about{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #33302D;
+}
+.accordion-body {
+    background-color: transparent !important;
+    border: none;
+  }
+
+
+
+
+.accordion-button {
+    background-color:#FFF9F1  !important;
+    border: none;
+    box-shadow: none;
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: #D9C1BB !important;
+    border: 1px solid #33302D;
+    box-shadow: none;
+}
+
+.more-offerings{
+    width: 100vw;
+    background-color: #33302D;
+    height: auto;
+    padding: 45px 0;
+
+}
+.more-offering-ctnr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: auto;
+    padding: 20px;
+
+}
+.more-offering-text-ctnr{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #FFF9F1;
+    height: 450px;
+    padding: 54px;
+
+}
+
+.offeringimg{
+    height: 450px;
+    width: 350px;
+}
+.offerings-header{
+    text-align: center;
+    padding: 10px;
+    color: #FFF9F1;
+    font-size: 2rem;
+    font-family: 'The Seasons', sans-serif;
+}
+.more-offerings h2{
+   font-family: 'The Seasons', sans-serif;
+   color: black;
+   padding: 10px;
+   margin: 0 auto;
+   text-transform: uppercase;
+   padding: 0;
+   width: 90%;
+   font-size: 3rem;
+}
+.more-offerings .sub{
+    color: #D4B5B8;
+    font-weight: 200;
+font-size: 1.3rem;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.more-offerings p{
+    color: black;
+    line-height: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.more-offerings a{
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 90%;
+}
+.more-offerings a:hover{
+    color: #D4B5B8;
+}
+
+
+
+
+.ctaa {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 75vh;
+
+    width: 100vw;
+    background-image: url('../images/Screen\ Shot\ 2023-09-09\ at\ 4.08.11\ PM.png');
+  }
+  
+  /* Centered text */
+  .centeredd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF9F2;
+    padding: 40px;
+    border: 1px solid black;
+color: black; 
+height: auto;
+width: 90%;
+}
+
+
+.testimonial-quote{
+    font-family: 'The Seasons', sans-serif;
+    font-size: 3rem;
+}
+.testimonial-text{
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 60vw;
+    margin: 0 auto;
+}
+.testimonial-name{
+    color: #D4B5B8;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sliderbtn{
+    background-color: #33302D; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 50%; /* Make the button circular */
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 10px;
+}
+.sliderbtn:hover{
+    background-color: #D4B5B8;
+    color: #33302D;
+}
+
+
+.newsletter {
+    text-align: center;
+height: auto;
+padding: 40px 0;
+    background-color: #33302D;
+    width: 100vw;
+  }
+  
+  .newsletter-header {
+    font-size: 5rem;
+    color: #D4B5B8;
+    font-family: 'The Seasons', sans-serif;
+    text-transform: uppercase;
+  }
+  .newsletter p{
+    color: #FFF9F1;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .newsletter-inputs {
+    display: inline-block;
+    margin-top: 20px; /* Adjust as needed to control spacing */
+  }
+  
+  .newsletter-inputs input,
+  .newsletter-inputs button {
+    height: 7vh;
+    margin: 10px;
+    width: 30vw;
+    padding: 10px;
+  }
+  .newsletter-inputs button{
+    background-color: #D4B5B8;
+    border: transparent;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    color: #33302D;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .footer-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+  }
+  .footer-logo-text{
+    font-size: 5rem;
+    font-family: 'Brittany Signature', cursive;
+    padding-bottom: 20px;
+  }
+  .footer-info{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-logo img {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    margin: 0 10px; /* Adjust as needed */
+  }
+  
+  .footer-links a {
+    margin: 0 10px; /* Adjust as needed */
+  }
+  .footer-links a:hover{
+    color: #D4B5B8;
+  }
+  .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons svg {
+  margin: 20px 10px;
+  font-size: 1.8rem; /* Adjust as needed */
+color: black;
+}
+
+
+.service-item-header{
+    color: #D4B5B8;
+    font-family: 'The Seasons', sans-serif;
+    text-transform: uppercase;
+}
+ .service-text, .service-price{
+color: #33302D;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+.service-text{
+font-size: 1rem;
+font-weight: 300;
+}
+.service-price{
+    font-weight: 700;
+}
+
+strong{
+    font-weight: 500;
+background-color: #D4B5B8;
+padding: 3px;
+}
+
+.booking{
+    border: 2px solid #D4B5B8;
+    background-color: #D4B5B8;
+    padding: 20px;
+    margin-bottom: 60px;
+    color: #33302D;
+}
+.booking:hover{
+    background-color: #33302D;
+    color: #D4B5B8;
+    border: none;
+    font-weight: 900;
+}
+
+.hero-bgg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the background to take up half the screen */
+    height: 30vh;
+    background-image: url('../images/Screen\ Shot\ 2023-09-09\ at\ 12.23.07\ PM.png'); /* Add your background image path here */
+    background-size: cover; /* Adjust this property to suit your needs */
+    background-position: center; /* Adjust this property to suit your needs */
+    /* opacity: 0.5;  */
+z-index: -2;  
+}
+  
+.podcast{
+    font-size: 2.6rem;
+    text-align: left;
+    color: black;
+    font-family: 'The Seasons', sans-serif;
+    text-transform: uppercase;
+}
+.podcast-title{
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'The Seasons', sans-serif;
+    line-height: 70px;
+
+}
+
+.podcast-sub{
+    color: #FFF9F2;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+.podcast-cta{
+    background-color: #D4B5B8;
+    border: 2px solid #33302D;
+}
+.podcast-btn{
+    padding: 20px 80px;
+    margin-top: 30px;
+    color: #FFF9F1;
+    background-color: #33302D;
+    border: 2px solid #FFF9F1;
+}
+.podcast-btn:hover{
+    color: #33302D;
+    font-weight: 600;
+ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #FFF9F1;
+}
+.butterfly-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 2rem; /* Adjust as needed */
+  }
+  .enroll-cta{
+    padding: 15px 90px;
+    border: 2px solid #33302D;
+    background-color: #D4B5B8;
+  }
+.navbar-brand, .nav-link{
+    color: #FFF9F1!important;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+.navbar-brand{
+    font-family: 'Brittany Signature';
+    font-size: 2rem;
+}
+
+.nav-link:hover{
+    font-size: 1.1rem;
+    text-shadow: 3px 4px 7px rgba(81,67,21,0.8);
+    color: #D4B5B8;
+}
+.submit-btn:hover{
+    background-color: #FFF9F1;
+    border: 1px solid #D9C1BB;
+    color: #D4B5B8;
+}
+
+.service-category {
+
+    text-align: left;
+ 
+    z-index: -1000; /* Ensure it's above other elements */
+    color: #D4B5B8;
+    font-weight: 600;
+ 
+  }
+  
+
+  .booking-link{
+    display: flex;
+justify-content: space-around;
+margin-top: 50px;
+
+  }
+
+  /* Add this CSS to your services.css file */
+.service-accordion .accordion-item {
+    box-shadow: none; /* Remove the box shadow */
+  }
+  
+
+  .accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+}
+
+/* Remove box shadow for all accordion items */
+.accordion-button {
+    box-shadow: none !important;
+}
+
+.custom-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    line-height: 30px;
+}
+  
+  .image-container {
+    max-width: 90vw;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  hr.about{
+    width: 70vw;
+    margin: 1rem 0;
+  }
+  
+  .paragraphs {
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    
+  }
+  
+  .paragraph {
+    width: 45%; /* Adjust as needed */
+  }
+  
+  .paragraph p {
+    font-size: 1rem; /* Adjust as needed */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #33302D;
+  }
+  .mission-statement{
+    font-family: 'Brittany Signature';
+    color: #D4B5B8;
+    font-size: 3rem;
+    margin: 15px;
+    width: 75vw;
+    line-height: 90px;
+text-align: center;
+    letter-spacing: 2px;
+  }
+  .cta-about{
+    text-align: center;
+    color: #D4B5B8;
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'The Seasons';
+    margin-left: 80px;
+    padding: 30px;
+  }
